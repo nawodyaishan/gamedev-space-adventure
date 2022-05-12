@@ -32,4 +32,4 @@ namespace Weapon_Script
             transform.Translate(0f, speed * Time.deltaTime, 0f);
         }
     }
-}
+} // Class
