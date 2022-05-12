@@ -1046,6 +1046,7 @@ GameObject:
   - component: {fileID: 2036341579}
   - component: {fileID: 2036341580}
   - component: {fileID: 2036341581}
+  - component: {fileID: 2036341582}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -1187,3 +1188,16 @@ PolygonCollider2D:
       - {x: 1.0875204, y: 0.18540862}
       - {x: 1.0911639, y: -0.16499758}
       - {x: 0.8785508, y: -0.1625588}
+--- !u!114 &2036341582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036341578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac50ff9b609b479b9e5cf7b4871a946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 600

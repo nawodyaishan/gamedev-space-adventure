@@ -19,6 +19,21 @@ namespace Player_Scripts
 
         void HandleMovement()
         {
+            // Move Upwards
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+                _myBody.AddForce(transform.up * speed);
+
+            // Move Down
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+                _myBody.AddForce(-transform.up * speed);
+
+            // Move Left
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+                _myBody.AddForce(-transform.right * speed);
+
+            // Move Right
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+                _myBody.AddForce(transform.right * speed);
         }
     }
 } //Class 
