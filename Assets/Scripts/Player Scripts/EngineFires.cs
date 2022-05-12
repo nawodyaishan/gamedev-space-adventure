@@ -8,7 +8,7 @@ namespace Player_Scripts
         [SerializeField] private ParticleSystem[] engineFires;
 
         // Engine Power
-        [SerializeField] private int enginePower = 3;
+        [SerializeField] private int enginePower = 10;
 
         private void Update()
         {
