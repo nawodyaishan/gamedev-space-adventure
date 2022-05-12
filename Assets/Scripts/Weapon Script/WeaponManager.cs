@@ -4,7 +4,6 @@ namespace Weapon_Script
 {
     public class WeaponManager : MonoBehaviour
     {
-
         [SerializeField] private GameObject[] projectiles;
 
         [SerializeField] private Transform[] projectileSpawnPoints;
@@ -12,10 +11,5 @@ namespace Weapon_Script
         [SerializeField] private float shootThreshold = 0.2f;
 
         [SerializeField] private float shootTimer;
-        
-        
-
-
-
     }
 } // Controller
