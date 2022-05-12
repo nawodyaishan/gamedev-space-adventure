@@ -8,8 +8,19 @@ namespace Weapon_Script
 
         [SerializeField] private Transform[] projectileSpawnPoints;
 
-        [SerializeField] private float shootThreshold = 0.2f;
+        [SerializeField] private float shootTimerThreshold = 0.2f;
 
         [SerializeField] private float shootTimer;
+
+        [SerializeField] private bool canShoot;
+
+
+        private void Update()
+        {
+        }
+
+        private void HandlePlayerShooting()
+        {
+        }
     }
 } // Controller
