@@ -4,14 +4,7 @@ namespace Player_Scripts
 {
     public class EngineFires : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        }
+        // To Attach All the Particles in Player Ship
+        [SerializeField] private ParticleSystem[] engineFires;
     }
 }
