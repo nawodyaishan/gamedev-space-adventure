@@ -1,1 +1,1 @@
-# gamedev-space-adveture
+# Space shooter game using Unity C#
