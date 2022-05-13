@@ -17,6 +17,11 @@ namespace Weapon_Script
 
         private void Update()
         {
+            if (Time.time > shootTimer)
+            {
+                
+            }
+            HandlePlayerShooting();
         }
 
         private void HandlePlayerShooting()
@@ -36,6 +41,15 @@ namespace Weapon_Script
                 // Shooting two times in a row
                 Instantiate(projectiles[0], projectileSpawnPoints[0].position, Quaternion.identity);
             }
+            
+            
+            
+        }// Handle Shooting
+
+        void ResetShootingTimer()
+        {
+            
         }
     }
-} // Controller
+    
+} // Class - Controller
