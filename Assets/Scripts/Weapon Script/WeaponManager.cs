@@ -28,9 +28,13 @@ namespace Weapon_Script
                 return;
             }
 
+            // Shoot Blaster 1
             if (Input.GetKey(KeyCode.J))
             {
-                Instantiate(projectiles[0], projectileSpawnPoints[0]);
+                Instantiate(projectiles[0], projectileSpawnPoints[0].position, Quaternion.identity);
+
+                // Shooting two times in a row
+                Instantiate(projectiles[0], projectileSpawnPoints[0].position, Quaternion.identity);
             }
         }
     }
