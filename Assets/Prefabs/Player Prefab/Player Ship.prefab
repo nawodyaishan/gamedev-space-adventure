@@ -40,6 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 90278827}
+  - component: {fileID: 703124858804861472}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -62,6 +63,31 @@ Transform:
   m_Father: {fileID: 8473478151364022797}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &703124858804861472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90278826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc9ff11d554c4eadafda31a6ec5cdb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectiles:
+  - {fileID: 3186986911134002891, guid: 9179871eb3c414ecfbb5eff605836eb3, type: 3}
+  - {fileID: 9193312549081669597, guid: f5e3a3118980949afb8dbb2eefab7408, type: 3}
+  - {fileID: 4937565579001827751, guid: c3b39947676994146ba552900255bea6, type: 3}
+  - {fileID: 6920361231240666779, guid: 9c4d6b25c679c49548200dd0e2e1c0a0, type: 3}
+  - {fileID: 1665461385457414356, guid: 50421081553bb43ceadb64bdda4f49e0, type: 3}
+  projectileSpawnPoints:
+  - {fileID: 49997137}
+  - {fileID: 1557124523}
+  - {fileID: 1847498753}
+  shootTimerThreshold: 0.2
+  shootTimer: 0
+  canShoot: 0
 --- !u!1 &522571478
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,13 +645,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 10
   m_LinearDrag: 3
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &8473478151364022795
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -636,7 +662,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

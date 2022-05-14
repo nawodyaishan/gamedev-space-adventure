@@ -9,7 +9,7 @@ namespace Weapon_Script
         [SerializeField] public float minDamage = 5f;
         [SerializeField] public float maxDamage = 6f;
 
-        private float _projectileDamage;
+        private float projectileDamage;
 
 
         [SerializeField] private AudioClip spawnSound;
@@ -20,7 +20,7 @@ namespace Weapon_Script
 
         private void Start()
         {
-            _projectileDamage = (int) Random.Range(minDamage, maxDamage);
+            projectileDamage = (int) Random.Range(minDamage, maxDamage);
             if (spawnSound)
             {
                 AudioSource.PlayClipAtPoint(spawnSound, new Vector3(0f, 6f, 0f));

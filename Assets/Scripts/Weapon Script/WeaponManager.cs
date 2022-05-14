@@ -8,7 +8,7 @@ namespace Weapon_Script
 
         [SerializeField] private Transform[] projectileSpawnPoints;
 
-        [SerializeField] private float shootTimerThreshold = 0.2f;
+        [SerializeField] private float shootTimerThreshold = 1f;
 
         [SerializeField] private float shootTimer;
 
@@ -19,8 +19,9 @@ namespace Weapon_Script
         {
             if (Time.time > shootTimer)
             {
-                
+                canShoot = true;
             }
+
             HandlePlayerShooting();
         }
 
@@ -34,22 +35,49 @@ namespace Weapon_Script
             }
 
             // Shoot Blaster 1
-            if (Input.GetKey(KeyCode.J))
+            if (Input.GetKeyDown(KeyCode.J))
             {
                 Instantiate(projectiles[0], projectileSpawnPoints[0].position, Quaternion.identity);
 
                 // Shooting two times in a row
-                Instantiate(projectiles[0], projectileSpawnPoints[0].position, Quaternion.identity);
+                Instantiate(projectiles[0], projectileSpawnPoints[1].position, Quaternion.identity);
             }
-            
-            
-            
-        }// Handle Shooting
+
+            // Shoot Blaster 2
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                Instantiate(projectiles[1], projectileSpawnPoints[0].position, Quaternion.identity);
+
+                // Shooting two times in a row
+                Instantiate(projectiles[1], projectileSpawnPoints[1].position, Quaternion.identity);
+            }
+
+            // Shoot Laser
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                Instantiate(projectiles[2], projectileSpawnPoints[0].position, Quaternion.identity);
+
+                // Shooting two times in a row
+                Instantiate(projectiles[2], projectileSpawnPoints[1].position, Quaternion.identity);
+            }
+
+            // Shoot Heavy Rocket
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                Instantiate(projectiles[3], projectileSpawnPoints[2].position, Quaternion.identity);
+            }
+
+            // Shoot Missile
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                Instantiate(projectiles[4], projectileSpawnPoints[2].position, Quaternion.identity);
+            }
+        } // Handle Shooting
 
         void ResetShootingTimer()
         {
-            
+            canShoot = false;
+            shootTimer = Time.time + shootTimerThreshold;
         }
     }
-    
 } // Class - Controller
