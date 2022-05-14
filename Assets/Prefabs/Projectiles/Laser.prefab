@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4937565579001827749}
   - component: {fileID: 4937565579001827748}
   - component: {fileID: 4937565579001827744}
+  - component: {fileID: -248883405118096420}
   m_Layer: 6
   m_Name: Laser
   m_TagString: Projectile
@@ -152,3 +153,16 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: 796c313b38dce8d458061c022b9abddd, type: 3}
   destroySound: {fileID: 8300000, guid: 2e3be76c5c8ecf34b9d24d39d8991e39, type: 3}
   boomEffect: {fileID: 1610025635877318, guid: efd7233f184954f4e8c824d4df0cebb5, type: 3}
+--- !u!114 &-248883405118096420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4937565579001827751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8f8fae65b01b414b94250036b69e110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTimer: 2.5
