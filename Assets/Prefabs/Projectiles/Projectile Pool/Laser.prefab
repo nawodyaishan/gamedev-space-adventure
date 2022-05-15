@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c047a1e036e265349b645decceadcc03, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f3269408ea692c4e95762a26af74165, type: 3}
   m_Color: {r: 0, g: 0.47969294, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c047a1e036e265349b645decceadcc03, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f3269408ea692c4e95762a26af74165, type: 3}
   m_Color: {r: 0, g: 0.47969294, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -181,8 +181,9 @@ GameObject:
   - component: {fileID: 4334521514756319947}
   - component: {fileID: 4334521514756319946}
   - component: {fileID: 4334521514756319941}
+  - component: {fileID: 1867731340903467966}
   m_Layer: 7
-  m_Name: Laster
+  m_Name: Laser
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -239,7 +240,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.3442686, y: 0.10281944}
+  m_Offset: {x: -1.3281817, y: -0.46021676}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -250,7 +251,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26122332, y: 0.47447872}
+  m_Size: {x: 0.1861515, y: 1.3431635}
   m_EdgeRadius: 0
 --- !u!61 &4334521514756319946
 BoxCollider2D:
@@ -265,7 +266,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3442683, y: 0.10281944}
+  m_Offset: {x: 1.3442688, y: -0.4709412}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -276,7 +277,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26122332, y: 0.47447872}
+  m_Size: {x: 0.17542839, y: 1.3860614}
   m_EdgeRadius: 0
 --- !u!114 &4334521514756319941
 MonoBehaviour:
@@ -296,3 +297,16 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: c935c8501ca8cea42bcc44106293aee9, type: 3}
   destroySound: {fileID: 0}
   boomEffect: {fileID: 0}
+--- !u!114 &1867731340903467966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4334521514756319940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8f8fae65b01b414b94250036b69e110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3

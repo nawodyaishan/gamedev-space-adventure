@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7149687901863824980}
   - component: {fileID: 7149687901863824981}
   - component: {fileID: 7149687901863824978}
+  - component: {fileID: 2955899517239250308}
   m_Layer: 7
   m_Name: Blaster Pool 2
   m_TagString: Projectile
@@ -128,6 +129,19 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: 3e8cc2776d3a7504187923a001952b42, type: 3}
   destroySound: {fileID: 0}
   boomEffect: {fileID: 0}
+--- !u!114 &2955899517239250308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7149687901863824979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8f8fae65b01b414b94250036b69e110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3
 --- !u!1 &7149687901944734428
 GameObject:
   m_ObjectHideFlags: 0
