@@ -28,6 +28,27 @@ namespace Enemy_Scripts
 
             maxY = position.y = verticalMovementTreshold;
             minY = position.y - verticalMovementTreshold;
+
+            if (Random.Range(0, 2) > 0)
+            {
+                moveLeft = true;
+            }
+        }
+
+        private void Update()
+        {
+            HandleEnemyMovementHorizontal();
+            HandleEnemyMovementVertical();
+        }
+
+        void HandleEnemyMovementHorizontal()
+        {
+            if (!moveOnX)
+                return;
+        }
+
+        void HandleEnemyMovementVertical()
+        {
         }
     }
 } //Class
