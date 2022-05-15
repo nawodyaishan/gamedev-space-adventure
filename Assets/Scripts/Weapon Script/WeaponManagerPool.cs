@@ -7,14 +7,14 @@ namespace Weapon_Script
     public class WeaponManagerPool : MonoBehaviour
     {
         [SerializeField] private GameObject projectile;
-        List<GameObject> projectilePool = new List<GameObject>();
-        [SerializeField] private GameObject projectileHolder;
+        [SerializeField] List<GameObject> projectilePool = new List<GameObject>();
         [SerializeField] private KeyCode keyToPressToShoot;
         [SerializeField] private Transform projectileSpawnPoint;
         [SerializeField] private float shootWaitTime = 0.2f;
         [SerializeField] private bool isEnemy;
         [SerializeField] private bool canShoot;
 
+        private GameObject projectileHolder;
         private bool projectileSpawned;
         private float shootTimer;
 
@@ -46,6 +46,7 @@ namespace Weapon_Script
             if (Input.GetKeyDown(keyToPressToShoot))
             {
                 GetObjectFromPoolOrGetANewOne();
+                ResetShootingTimer();
             }
         }
 
@@ -77,11 +78,15 @@ namespace Weapon_Script
             }
         }
 
-        void ResetShhotingTimer()
+        void ResetShootingTimer()
         {
             canShoot = false;
 
             if (isEnemy)
+            {
+                shootTimer = Time.time + Random.Range(shootWaitTime, (shootWaitTime + 1));
+            }
+            else
             {
                 shootTimer = Time.time + shootWaitTime;
             }
@@ -91,4 +96,4 @@ namespace Weapon_Script
         {
         }
     }
-} // Class
+} // Class   

@@ -1,15 +1,20 @@
-using System;
 using UnityEngine;
 
 namespace Weapon_Script
 {
     public class ProjectileLifeTimer : MonoBehaviour
     {
-        [SerializeField] private float destroyTimer = 3f;
+        [SerializeField] private float timer = 3f;
 
-        private void Start()
+        void OnEnable()
         {
-            Destroy(gameObject, destroyTimer);
+            Invoke(nameof(DeactivateProjectile), timer);
+        }
+
+        void DeactivateProjectile()
+        {
+            if (gameObject.activeInHierarchy)
+                gameObject.SetActive(false);
         }
     }
 }

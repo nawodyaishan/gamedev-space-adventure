@@ -207,6 +207,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1553255982 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 49997137, guid: 7bd7fd10a4074459180ad955a7ff3652, type: 3}
+  m_PrefabInstance: {fileID: 8473478149373823302}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1593880939
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,9 +353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 3186986911134002891, guid: 9179871eb3c414ecfbb5eff605836eb3, type: 3}
-  projectileHolder: {fileID: 0}
-  keyToPressToShoot: 0
-  projectileSpawnPoint: {fileID: 0}
+  projectilePool: []
+  keyToPressToShoot: 106
+  projectileSpawnPoint: {fileID: 1553255982}
   shootWaitTime: 0
   isEnemy: 0
   canShoot: 0
