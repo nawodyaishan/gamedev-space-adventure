@@ -5,27 +5,16 @@ namespace Weapon_Script
 {
     public class WeaponManagerPool : MonoBehaviour
     {
-
         [SerializeField] private GameObject projectile;
-        
-        [SerializeField] List<GameObject> projectilePool = new List<GameObject>();
-         
-        
-        
-        
-        private void Start()
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                GameObject g = Instantiate(projectile);
-                projectilePool.Add(g);
-                
-            }
+        List<GameObject> projectilePool = new List<GameObject>();
+        [SerializeField] private GameObject projectileHolder;
+        [SerializeField] private KeyCode keyToPressToShoot;
+        [SerializeField] private Transform projectileSpawnPoint;
+        [SerializeField] private float shootWaitTime = 0.2f;
+        [SerializeField] private bool isEnemy;
 
-        }
-        
-        
-        
-         
+        private bool projectileSpawned;
+        private float shooterTimer;
+        private bool canShoot;
     }
 } // Class
