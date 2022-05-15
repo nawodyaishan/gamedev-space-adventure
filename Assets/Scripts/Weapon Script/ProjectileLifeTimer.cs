@@ -11,6 +11,11 @@ namespace Weapon_Script
             Invoke(nameof(DeactivateProjectile), timer);
         }
 
+        void OnDisable()
+        {
+            CancelInvoke(nameof(DeactivateProjectile));
+        }
+
         void DeactivateProjectile()
         {
             if (gameObject.activeInHierarchy)
