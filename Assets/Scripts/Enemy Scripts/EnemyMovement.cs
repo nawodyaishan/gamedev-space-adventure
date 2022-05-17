@@ -45,10 +45,65 @@ namespace Enemy_Scripts
         {
             if (!moveOnX)
                 return;
+
+            if (moveLeft)
+            {
+                var transform1 = transform;
+                tempMovement_Horizontal = transform1.position;
+                tempMovement_Horizontal.x -= moveSpeed * Time.deltaTime;
+                transform1.position = tempMovement_Horizontal;
+
+                if (tempMovement_Horizontal.x < minX)
+                {
+                    moveLeft = false;
+                }
+            }
+
+            else
+            {
+                var transform1 = transform;
+                tempMovement_Horizontal = transform1.position;
+                tempMovement_Horizontal.x += moveSpeed * Time.deltaTime;
+                transform1.position = tempMovement_Horizontal;
+
+                if (tempMovement_Horizontal.x > maxX)
+                {
+                    moveLeft = true;
+                }
+            }
         }
+
 
         void HandleEnemyMovementVertical()
         {
+            if (!moveOnY)
+                return;
+
+            if (moveUp)
+            {
+                var transform2 = transform;
+                tempMovement_Vertical = transform2.position;
+                tempMovement_Vertical.y += moveSpeed * Time.deltaTime;
+                transform2.position = tempMovement_Vertical;
+
+                if (tempMovement_Horizontal.y > maxY)
+                {
+                    moveLeft = false;
+                }
+            }
+
+            else
+            {
+                var transform2 = transform;
+                tempMovement_Vertical = transform2.position;
+                tempMovement_Vertical.y -= moveSpeed * Time.deltaTime;
+                transform2.position = tempMovement_Vertical;
+
+                if (tempMovement_Vertical.y < minY)
+                {
+                    moveUp = true;
+                }
+            }
         }
     }
 } //Class
