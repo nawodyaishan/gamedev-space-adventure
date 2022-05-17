@@ -2,13 +2,17 @@ using UnityEngine;
 
 public class EnemyMovementInPoints : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+    [SerializeField] private Transform[] movementPoints;
 
-    // Update is called once per frame
-    void Update()
+    private int currentMoveIndex;
+
+    private Vector3 targetPosition;
+
+    [SerializeField] private float moveSpeed = 8f;
+
+    private bool moveRandomly;
+
+    private void Move()
     {
     }
-}
+} // Class
