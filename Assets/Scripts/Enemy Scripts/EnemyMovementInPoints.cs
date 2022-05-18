@@ -14,6 +14,12 @@ namespace Enemy_Scripts
 
         private bool moveRandomly;
 
+        private void Start()
+        {
+            SetTargetPosition();
+        }
+
+
         void SelectRandomPosition()
         {
             while (movementPoints[currentMoveIndex].position == targetPosition)
