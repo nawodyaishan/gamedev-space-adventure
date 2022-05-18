@@ -499,11 +499,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5081188795018191265, guid: 5cdcf0cc4105745a68c8a868e3fe63a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.7
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5081188795018191265, guid: 5cdcf0cc4105745a68c8a868e3fe63a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.7
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5081188795018191265, guid: 5cdcf0cc4105745a68c8a868e3fe63a9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -559,7 +559,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526192852}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9bf9e8521a62497d80a7fb3521c70c2, type: 3}
   m_Name: 
@@ -582,6 +582,23 @@ MonoBehaviour:
   - {fileID: 1322816681}
   moveSpeed: 8
   moveRandomly: 0
+--- !u!114 &526192859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526192852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ceb1b3bdc5e472a878c28c1a0525ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -52.8
+  maxX: 52.8
+  minY: 0
+  maxY: 30.3
+  moveSpeed: 8
 --- !u!1 &908709439
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,7 +1101,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844681327}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9bf9e8521a62497d80a7fb3521c70c2, type: 3}
   m_Name: 
@@ -1107,6 +1124,23 @@ MonoBehaviour:
   - {fileID: 1322816681}
   moveSpeed: 8
   moveRandomly: 1
+--- !u!114 &1844681334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844681327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ceb1b3bdc5e472a878c28c1a0525ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -52.8
+  maxX: 52.8
+  minY: 0
+  maxY: 30.3
+  moveSpeed: 8
 --- !u!1001 &8473478149373823302
 PrefabInstance:
   m_ObjectHideFlags: 0
