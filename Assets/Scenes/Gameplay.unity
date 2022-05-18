@@ -178,7 +178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192019240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7, y: 15.1, z: 0}
+  m_LocalPosition: {x: -13.25, y: 15.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -564,8 +564,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9bf9e8521a62497d80a7fb3521c70c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPoints: []
+  movementPoints:
+  - {fileID: 1825920605}
+  - {fileID: 908709440}
+  - {fileID: 325738548}
+  - {fileID: 398881113}
+  - {fileID: 1827067919}
+  - {fileID: 494342700}
+  - {fileID: 192019241}
+  - {fileID: 1239828390}
+  - {fileID: 1017755939}
+  - {fileID: 344997894}
+  - {fileID: 1494448322}
+  - {fileID: 1407507394}
+  - {fileID: 336040672}
+  - {fileID: 1558328716}
+  - {fileID: 1322816681}
   moveSpeed: 8
+  moveRandomly: 0
 --- !u!1 &908709439
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017755938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.5, y: 14.7, z: 0}
+  m_LocalPosition: {x: 40.66, y: 16.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -785,7 +801,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407507393}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.5, y: -4.1, z: 0}
+  m_LocalPosition: {x: 11.04, y: -4.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1073,8 +1089,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9bf9e8521a62497d80a7fb3521c70c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPoints: []
+  movementPoints:
+  - {fileID: 1825920605}
+  - {fileID: 908709440}
+  - {fileID: 325738548}
+  - {fileID: 398881113}
+  - {fileID: 1827067919}
+  - {fileID: 494342700}
+  - {fileID: 192019241}
+  - {fileID: 1239828390}
+  - {fileID: 1017755939}
+  - {fileID: 344997894}
+  - {fileID: 1494448322}
+  - {fileID: 1407507394}
+  - {fileID: 336040672}
+  - {fileID: 1558328716}
+  - {fileID: 1322816681}
   moveSpeed: 8
+  moveRandomly: 1
 --- !u!1001 &8473478149373823302
 PrefabInstance:
   m_ObjectHideFlags: 0

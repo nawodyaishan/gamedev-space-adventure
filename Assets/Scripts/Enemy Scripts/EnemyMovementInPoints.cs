@@ -12,11 +12,16 @@ namespace Enemy_Scripts
 
         [SerializeField] private float moveSpeed = 8f;
 
-        private bool moveRandomly;
+        [SerializeField] bool moveRandomly;
 
         private void Start()
         {
             SetTargetPosition();
+        }
+
+        private void Update()
+        {
+            Move();
         }
 
 
