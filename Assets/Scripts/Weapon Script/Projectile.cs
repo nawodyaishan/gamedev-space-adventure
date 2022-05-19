@@ -1,3 +1,4 @@
+using Manager_Scripts;
 using UnityEngine;
 
 namespace Weapon_Script
@@ -35,6 +36,26 @@ namespace Weapon_Script
         private void Update()
         {
             transform.Translate(0f, speed * Time.deltaTime, 0f);
+        }
+
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.CompareTag(TagManager.PLYAER_TAG))
+            {
+                // damage 
+                Debug.Log("Player Hit");
+            }
+
+            if (col.CompareTag(TagManager.ENEMY_TAG) || col.CompareTag(TagManager.METEOR_TAG))
+            {
+                // Damage
+                Debug.Log("Enemy Hit");
+            }
+
+
+            if (col.CompareTag(TagManager.UNTAGGED_TAG))
+            {
+            }
         }
     }
 } // Class
