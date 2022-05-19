@@ -335,12 +335,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98170f598d986421c97e133c6d0439b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
+  projectile: {fileID: 9193312549081669597, guid: f5e3a3118980949afb8dbb2eefab7408, type: 3}
   projectilePool: []
   keyToPressToShoot: 0
-  projectileSpawnPoint: {fileID: 0}
+  projectileSpawnPoint: {fileID: 5081188795696391726}
   shootWaitTime: 0.2
-  isEnemy: 0
+  isEnemy: 1
   canShoot: 0
 --- !u!1 &5081188795696391727
 GameObject:

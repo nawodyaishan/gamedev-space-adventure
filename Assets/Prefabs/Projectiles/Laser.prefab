@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42888e0f5866940a79f9d8dc410012b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 45
+  speed: -45
   minDamage: 9
   maxDamage: 9
   spawnSound: {fileID: 8300000, guid: 796c313b38dce8d458061c022b9abddd, type: 3}
@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8f8fae65b01b414b94250036b69e110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTimer: 2.5
+  timer: 3
