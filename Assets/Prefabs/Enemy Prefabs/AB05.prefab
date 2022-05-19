@@ -339,7 +339,7 @@ MonoBehaviour:
   projectilePool: []
   keyToPressToShoot: 0
   projectileSpawnPoint: {fileID: 5081188795696391726}
-  shootWaitTime: 0.2
+  shootWaitTime: 1
   isEnemy: 1
   canShoot: 0
 --- !u!1 &5081188795696391727

@@ -23,7 +23,7 @@ namespace Weapon_Script
             if (isEnemy)
             {
                 projectileHolder = GameObject.FindWithTag(TagManager.ENEMY_PROJECTILE_HOLDER_TAG);
-                //ResetShootingTimer();
+                ResetShootingTimer();
             }
             else
             {
