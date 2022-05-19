@@ -31,6 +31,37 @@ Transform:
   m_Father: {fileID: 522571479}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &89566441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 89566442}
+  m_Layer: 0
+  m_Name: Blaster and Laser Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &89566442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89566441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 522571479}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &90278826
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,6 +72,11 @@ GameObject:
   m_Component:
   - component: {fileID: 90278827}
   - component: {fileID: 703124858804861472}
+  - component: {fileID: 8473478149373823310}
+  - component: {fileID: 8473478149373823313}
+  - component: {fileID: 8473478149373823314}
+  - component: {fileID: 8473478149373823315}
+  - component: {fileID: 8473478149373823316}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -70,7 +106,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90278826}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2dc9ff11d554c4eadafda31a6ec5cdb1, type: 3}
   m_Name: 
@@ -87,6 +123,101 @@ MonoBehaviour:
   - {fileID: 1847498753}
   shootTimerThreshold: 0.2
   shootTimer: 0
+  canShoot: 0
+--- !u!114 &8473478149373823310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90278826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98170f598d986421c97e133c6d0439b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8905099041966030655, guid: b4d18456adbe14f5db331d9e74e1d3fe, type: 3}
+  projectilePool: []
+  keyToPressToShoot: 106
+  projectileSpawnPoint: {fileID: 89566442}
+  shootWaitTime: 0
+  isEnemy: 0
+  canShoot: 0
+--- !u!114 &8473478149373823313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90278826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98170f598d986421c97e133c6d0439b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 4334521514756319940, guid: 9481bce0a411844b49806b2ef92f46aa, type: 3}
+  projectilePool: []
+  keyToPressToShoot: 108
+  projectileSpawnPoint: {fileID: 89566442}
+  shootWaitTime: 0
+  isEnemy: 0
+  canShoot: 0
+--- !u!114 &8473478149373823314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90278826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98170f598d986421c97e133c6d0439b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 7149687901863824979, guid: 6afa10763f9c34ba9948945b2734750c, type: 3}
+  projectilePool: []
+  keyToPressToShoot: 107
+  projectileSpawnPoint: {fileID: 89566442}
+  shootWaitTime: 0
+  isEnemy: 0
+  canShoot: 0
+--- !u!114 &8473478149373823315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90278826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98170f598d986421c97e133c6d0439b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 6920361231240666779, guid: 9c4d6b25c679c49548200dd0e2e1c0a0, type: 3}
+  projectilePool: []
+  keyToPressToShoot: 111
+  projectileSpawnPoint: {fileID: 89566442}
+  shootWaitTime: 0
+  isEnemy: 0
+  canShoot: 0
+--- !u!114 &8473478149373823316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90278826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98170f598d986421c97e133c6d0439b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1665461385457414356, guid: 50421081553bb43ceadb64bdda4f49e0, type: 3}
+  projectilePool: []
+  keyToPressToShoot: 105
+  projectileSpawnPoint: {fileID: 89566442}
+  shootWaitTime: 0
+  isEnemy: 0
   canShoot: 0
 --- !u!1 &522571478
 GameObject:
@@ -119,6 +250,7 @@ Transform:
   - {fileID: 49997137}
   - {fileID: 1557124523}
   - {fileID: 1847498753}
+  - {fileID: 89566442}
   m_Father: {fileID: 8473478151364022797}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -372,7 +504,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1410894939
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: c0925c40d16669249b07548781c7f70f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -542,7 +674,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1410894939
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 7520b6b8a4b86ac4090b3f6e1c9159aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

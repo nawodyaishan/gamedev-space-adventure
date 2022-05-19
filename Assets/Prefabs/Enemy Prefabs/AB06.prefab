@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 1652108634756726536}
   - component: {fileID: 1652108634756726537}
   - component: {fileID: -833112532032626125}
+  - component: {fileID: 1844681328}
+  - component: {fileID: 1844681334}
+  - component: {fileID: 1844681335}
   m_Layer: 8
   m_Name: AB06
   m_TagString: Enemy
@@ -27,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652108634756726542}
-  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: 0.2399999, y: 23.38, z: -2.1158354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -279,11 +282,87 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652108634756726542}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fd218a31bbbf4852b5b17daffe49317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveOnX: 1
+  moveOnY: 1
+  minX: 0
+  maxX: 0
+  minY: 0
+  maxY: 0
+  moveSpeed: 10
+  horizontalMovementTreshold: 8
+  verticalMovementTreshold: 6
+  moveUp: 0
+--- !u!114 &1844681328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652108634756726542}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9bf9e8521a62497d80a7fb3521c70c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  moveSpeed: 8
+  moveRandomly: 1
+--- !u!114 &1844681334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652108634756726542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ceb1b3bdc5e472a878c28c1a0525ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -52.8
+  maxX: 52.8
+  minY: 0
+  maxY: 30.3
+  moveSpeed: 8
+--- !u!114 &1844681335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652108634756726542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98170f598d986421c97e133c6d0439b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
+  projectilePool: []
+  keyToPressToShoot: 0
+  projectileSpawnPoint: {fileID: 0}
+  shootWaitTime: 0.2
+  isEnemy: 0
+  canShoot: 0
 --- !u!1 &1652108634781585082
 GameObject:
   m_ObjectHideFlags: 0

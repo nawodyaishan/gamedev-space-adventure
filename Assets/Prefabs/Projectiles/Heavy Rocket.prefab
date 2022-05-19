@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6920361231240666778}
   - component: {fileID: 6920361231240666782}
   - component: {fileID: -8465003669540512775}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Heavy Rocket
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -186,4 +186,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8f8fae65b01b414b94250036b69e110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTimer: 4
+  timer: 3
