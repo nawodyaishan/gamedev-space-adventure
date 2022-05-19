@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1844681328}
   - component: {fileID: 1844681334}
   - component: {fileID: 1844681335}
+  - component: {fileID: 4599673681199734968}
   m_Layer: 8
   m_Name: AB06
   m_TagString: Enemy
@@ -356,10 +357,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98170f598d986421c97e133c6d0439b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
+  projectile: {fileID: 3186986911134002891, guid: 9179871eb3c414ecfbb5eff605836eb3, type: 3}
   projectilePool: []
   keyToPressToShoot: 0
-  projectileSpawnPoint: {fileID: 0}
+  projectileSpawnPoint: {fileID: 1652108634781585061}
+  shootWaitTime: 1
+  isEnemy: 0
+  canShoot: 0
+--- !u!114 &4599673681199734968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652108634756726542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98170f598d986421c97e133c6d0439b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 9193312549081669597, guid: f5e3a3118980949afb8dbb2eefab7408, type: 3}
+  projectilePool: []
+  keyToPressToShoot: 0
+  projectileSpawnPoint: {fileID: 1652108635492267346}
   shootWaitTime: 1
   isEnemy: 0
   canShoot: 0

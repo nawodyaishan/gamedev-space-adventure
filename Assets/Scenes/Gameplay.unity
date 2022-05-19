@@ -554,7 +554,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: AB05
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 526192860, guid: 5cdcf0cc4105745a68c8a868e3fe63a9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5cdcf0cc4105745a68c8a868e3fe63a9, type: 3}
 --- !u!1 &908709439
 GameObject:
@@ -1035,6 +1036,14 @@ PrefabInstance:
       propertyPath: movementPoints.Array.data[14]
       value: 
       objectReference: {fileID: 1322816681}
+    - target: {fileID: 1844681335, guid: de3bd2d95a0cf45de855fed4e9f8784f, type: 3}
+      propertyPath: isEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1844681335, guid: de3bd2d95a0cf45de855fed4e9f8784f, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 9193312549081669597, guid: f5e3a3118980949afb8dbb2eefab7408, type: 3}
     - target: {fileID: 1652108634756726538, guid: de3bd2d95a0cf45de855fed4e9f8784f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1082,6 +1091,10 @@ PrefabInstance:
     - target: {fileID: 1652108634756726542, guid: de3bd2d95a0cf45de855fed4e9f8784f, type: 3}
       propertyPath: m_Name
       value: AB06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599673681199734968, guid: de3bd2d95a0cf45de855fed4e9f8784f, type: 3}
+      propertyPath: isEnemy
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de3bd2d95a0cf45de855fed4e9f8784f, type: 3}
