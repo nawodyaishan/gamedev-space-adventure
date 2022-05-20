@@ -1,11 +1,17 @@
 using Manager_Scripts;
 using UnityEngine;
 
-public class Collector : MonoBehaviour
+namespace Gameplay_Controller
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class Collector : MonoBehaviour
     {
-        if (collision.CompareTag(TagManager.PRIJECTILE_TAG))
-            collision.gameObject.SetActive(false);
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag(TagManager.PRIJECTILE_TAG))
+                collision.gameObject.SetActive(false);
+
+            if (collision.CompareTag(TagManager.METEOR_TAG))
+                collision.gameObject.SetActive((false));
+        }
     }
 } //class
