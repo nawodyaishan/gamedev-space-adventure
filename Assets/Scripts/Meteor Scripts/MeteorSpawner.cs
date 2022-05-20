@@ -10,6 +10,8 @@ namespace Meteor_Scripts
 
         [SerializeField] private float minX, maxX;
 
+        [SerializeField] private int minSpawnNo = 1, maxSpawnNo = 5;
+
         [SerializeField] private float minSpawnInterval = 4f, maxSpawnInterval = 10f;
 
         private int randomSpawnNumber;
@@ -18,13 +20,15 @@ namespace Meteor_Scripts
 
         private void SpawnMeteors()
         {
-            randomSpawnNumber = Random.Range(0, meteors.Length);
+            randomSpawnNumber = Random.Range(minSpawnNo, maxSpawnNo);
             for (int i = 0; i < randomSpawnNumber; i++)
             {
                 var spawnPosition = transform.position;
                 randomSpawnPosition = new Vector3(Random.Range(minX, maxX), spawnPosition.y, 0f);
                 Instantiate(meteors[Random.Range(0, meteors.Length)], randomSpawnPosition, quaternion.identity);
             }
+
+            Invoke(nameof(SpawnMeteors), Random.Range(minSpawnInterval, maxSpawnInterval));
         }
 
 
@@ -35,6 +39,10 @@ namespace Meteor_Scripts
         private void Start()
         {
             Invoke(nameof(SpawnMeteors), Random.Range(minSpawnInterval, maxSpawnInterval));
+
+            //  InvokeRepeating(nameof(SpawnMeteors), 1f,1f);
+
+            // InvokeRepeating(nameof(SpawnMeteors), Random.Range(minSpawnInterval,maxSpawnInterval),Random.Range(minSpawnInterval,maxSpawnInterval));
         }
 
         private void Update()
