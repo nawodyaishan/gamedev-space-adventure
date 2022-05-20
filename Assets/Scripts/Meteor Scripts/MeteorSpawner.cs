@@ -16,7 +16,7 @@ namespace Meteor_Scripts
 
         private Vector3 randomSpawnPosition;
 
-        void SpawnMeteors()
+        private void SpawnMeteors()
         {
             randomSpawnNumber = Random.Range(0, meteors.Length);
             for (int i = 0; i < randomSpawnNumber; i++)
@@ -34,6 +34,7 @@ namespace Meteor_Scripts
 
         private void Start()
         {
+            Invoke(nameof(SpawnMeteors), Random.Range(minSpawnInterval, maxSpawnInterval));
         }
 
         private void Update()
