@@ -51,6 +51,9 @@ TagManager:
   - name: Enemy
     uniqueID: 2084481953
     locked: 0
+  - name: Meteor
+    uniqueID: 2212727811
+    locked: 0
   - name: Player
     uniqueID: 1410894939
     locked: 0
