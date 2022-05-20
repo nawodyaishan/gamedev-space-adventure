@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 730600525709012698}
   - component: {fileID: 730600525709012697}
   - component: {fileID: 730600525709012696}
+  - component: {fileID: 1913771420}
   m_Layer: 8
   m_Name: Meteor 1
   m_TagString: Meteor
@@ -260,3 +261,22 @@ PolygonCollider2D:
       - {x: -0.96999997, y: -2.71}
       - {x: -0.75, y: -2.61}
       - {x: -0.59999996, y: -2.54}
+--- !u!114 &1913771420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730600525709012695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b88b590f30972417493588a8aeca4af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeed: 4
+  maxSpeed: 10
+  moveOnX: 0
+  moveOnY: 1
+  minRotationSpeed: 15
+  maxRotationSpeed: 50
+  rotationSpeed: 0
