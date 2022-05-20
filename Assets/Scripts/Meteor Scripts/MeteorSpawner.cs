@@ -1,14 +1,43 @@
+using Unity.Mathematics;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class MeteorSpawner : MonoBehaviour
+namespace Meteor_Scripts
 {
-    // Start is called before the first frame update
-    void Start()
+    public class MeteorSpawner : MonoBehaviour
     {
-    }
+        [SerializeField] private GameObject[] meteors;
 
-    // Update is called once per frame
-    void Update()
-    {
+        [SerializeField] private float minX, maxX;
+
+        [SerializeField] private float minSpawnInterval = 4f, maxSpawnInterval = 10f;
+
+        private int randomSpawnNumber;
+
+        private Vector3 randomSpawnPosition;
+
+        void SpawnMeteors()
+        {
+            randomSpawnNumber = Random.Range(0, meteors.Length);
+            for (int i = 0; i < randomSpawnNumber; i++)
+            {
+                var spawnPosition = transform.position;
+                randomSpawnPosition = new Vector3(Random.Range(minX, maxX), spawnPosition.y, 0f);
+                Instantiate(meteors[Random.Range(0, meteors.Length)], randomSpawnPosition, quaternion.identity);
+            }
+        }
+
+
+        private void Awake()
+        {
+        }
+
+        private void Start()
+        {
+        }
+
+        private void Update()
+        {
+        }
     }
-}
+} // Class
