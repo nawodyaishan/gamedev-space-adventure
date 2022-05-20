@@ -49,6 +49,42 @@ namespace Meteor_Scripts
 
         private void Update()
         {
+            HandleMovementX();
+            HandleMovementY();
+            RotateMeteor();
+        }
+
+        private void RotateMeteor()
+        {
+            zRotation += rotationSpeed * Time.deltaTime;
+
+            transform.rotation = Quaternion.AngleAxis(zRotation, Vector3.forward);
+        }
+
+        private void HandleMovementY()
+        {
+            if (!moveOnY)
+            {
+                return;
+            }
+
+            var transform1 = transform;
+            tempMovement = transform1.position;
+            tempMovement.y -= speedY * Time.deltaTime;
+            transform1.position = tempMovement;
+        }
+
+        private void HandleMovementX()
+        {
+            if (!moveOnX)
+            {
+                return;
+            }
+
+            var transform1 = transform;
+            tempMovement = transform1.position;
+            tempMovement.x += speedX * Time.deltaTime;
+            transform1.position = tempMovement;
         }
     }
 } // Class
