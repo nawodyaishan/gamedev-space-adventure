@@ -8,6 +8,9 @@ TagManager:
   - PlayerProjectileHolder
   - EnemyProjectileHolder
   - Enemy
+  - Meteor
+  - Collectable
+  - PlayerHealth
   layers:
   - Default
   - TransparentFX

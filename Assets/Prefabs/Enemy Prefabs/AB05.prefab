@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 3327215964040360138}
   - component: {fileID: 526192853}
   - component: {fileID: 526192859}
-  - component: {fileID: 526192860}
   - component: {fileID: 3041670354498132074}
   m_Layer: 8
   m_Name: AB05
@@ -324,25 +323,6 @@ MonoBehaviour:
   minY: 0
   maxY: 30.3
   moveSpeed: 8
---- !u!114 &526192860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5081188795018191325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98170f598d986421c97e133c6d0439b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 9193312549081669597, guid: f5e3a3118980949afb8dbb2eefab7408, type: 3}
-  projectilePool: []
-  keyToPressToShoot: 0
-  projectileSpawnPoint: {fileID: 5081188795696391726}
-  shootWaitTime: 1
-  isEnemy: 1
-  canShoot: 0
 --- !u!114 &3041670354498132074
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -53,8 +53,9 @@ namespace Weapon_Script
             }
 
 
-            if (col.CompareTag(TagManager.UNTAGGED_TAG))
+            if (col.CompareTag(TagManager.UNTAGGED_TAG) && !col.CompareTag(TagManager.COLLECTABLE_TAG))
             {
+                gameObject.SetActive(false);
             }
         }
     }
