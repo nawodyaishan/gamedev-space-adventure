@@ -24,6 +24,14 @@ namespace Enemy_Scripts
 
         private void SpawnNewWaveOfEnemies()
         {
+            if (spawnedEnemies.Count > 0)
+                return;
+
+            for (int i = 0; i < spawnPoints.Length; i++)
+            {
+                int randIndex = Random.Range(0, enemies.Length);
+                GameObject newEnemy = Instantiate(enemies[randIndex], spawnPoints[i].position, Quaternion.identity);
+            }
         }
 
         IEnumerator _SpawnWave(float waitTime)
