@@ -31,6 +31,11 @@ namespace Enemy_Scripts
             {
                 int randIndex = Random.Range(0, enemies.Length);
                 GameObject newEnemy = Instantiate(enemies[randIndex], spawnPoints[i].position, Quaternion.identity);
+
+
+                spawnedEnemies.Add(newEnemy);
+
+                // TODO = Inform UI about the wave number
             }
         }
 
@@ -44,6 +49,7 @@ namespace Enemy_Scripts
 
         private void Start()
         {
+            StartCoroutine(_SpawnWave(spawnWaitTime));
         }
 
         private void Update()
