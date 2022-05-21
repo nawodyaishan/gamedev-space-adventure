@@ -1,6 +1,4 @@
-using Unity.Mathematics;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Meteor_Scripts
 {
@@ -25,7 +23,7 @@ namespace Meteor_Scripts
             {
                 var spawnPosition = transform.position;
                 randomSpawnPosition = new Vector3(Random.Range(minX, maxX), spawnPosition.y, 0f);
-                Instantiate(meteors[Random.Range(0, meteors.Length)], randomSpawnPosition, quaternion.identity);
+                Instantiate(meteors[Random.Range(0, meteors.Length)], randomSpawnPosition, Quaternion.identity);
             }
 
             Invoke(nameof(SpawnMeteors), Random.Range(minSpawnInterval, maxSpawnInterval));
@@ -46,6 +44,10 @@ namespace Meteor_Scripts
         }
 
         private void Update()
+        {
+        }
+
+        public void CheckToSpawnNewWaves(GameObject shipToRemove)
         {
         }
     }

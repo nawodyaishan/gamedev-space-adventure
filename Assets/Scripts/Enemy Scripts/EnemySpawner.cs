@@ -55,5 +55,15 @@ namespace Enemy_Scripts
         private void Update()
         {
         }
+
+        private void CheckToSpawnNewWave(GameObject shipToRemove)
+        {
+            spawnedEnemies.Remove(shipToRemove);
+
+            if (spawnedEnemies.Count == 0)
+            {
+                StartCoroutine(_SpawnWave(spawnWaitTime));
+            }
+        }
     }
 } // Class
