@@ -15,6 +15,8 @@ namespace Player_Scripts
             HandleFireEngine();
         }
 
+
+// Player Input Configure
         private void HandleFireEngine()
         {
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
